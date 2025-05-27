@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { AlertTriangle, Heart, Users, BookOpen, ArrowRight } from "lucide-react";
+import { AlertTriangle, Heart, Users, BookOpen, ArrowRight, Lightbulb } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
