@@ -1,7 +1,6 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { AlertTriangle, Heart, Users, BookOpen, ArrowRight, Lightbulb } from "lucide-react";
+import { AlertTriangle, Heart, Users, BookOpen, ArrowRight, Lightbulb, Brain } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -108,6 +107,31 @@ const Index = () => {
               </p>
             </div>
           </div>
+        </CardContent>
+      </Card>
+
+      {/* Quiz Section */}
+      <Card className="bg-gradient-to-r from-soft-blue to-soft-green">
+        <CardHeader className="text-center">
+          <CardTitle className="text-2xl md:text-3xl text-primary flex items-center justify-center gap-3">
+            <Brain className="h-8 w-8" />
+            Uji Pengetahuan Anda
+          </CardTitle>
+          <CardDescription className="text-lg">
+            Quiz interaktif tentang pergaulan bebas dan dampaknya
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="text-center">
+          <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+            Ikuti quiz dengan 10 pertanyaan untuk menguji pemahaman Anda tentang pergaulan bebas 
+            di kalangan remaja dan cara pencegahannya.
+          </p>
+          <Button asChild size="lg" className="text-lg px-8">
+            <Link to="/quiz">
+              Mulai Quiz
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
         </CardContent>
       </Card>
 

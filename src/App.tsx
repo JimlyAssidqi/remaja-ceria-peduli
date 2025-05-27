@@ -14,6 +14,7 @@ import Solutions from "./pages/Solutions";
 import Counseling from "./pages/Counseling";
 import Articles from "./pages/Articles";
 import Contact from "./pages/Contact";
+import Quiz from "./pages/Quiz";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -41,6 +42,7 @@ const App = () => (
                   <Route path="/counseling" element={<Counseling />} />
                   <Route path="/articles" element={<Articles />} />
                   <Route path="/contact" element={<Contact />} />
+                  <Route path="/quiz" element={<Quiz />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </div>
