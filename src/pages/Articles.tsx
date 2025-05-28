@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -6,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Newspaper, Calendar, User, Search, TrendingUp, Clock } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Articles = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -184,8 +184,10 @@ const Articles = () => {
                       {article.readTime}
                     </div>
                   </div>
-                  <Button className="w-full mt-4" size="sm">
-                    Baca Selengkapnya
+                  <Button asChild className="w-full mt-4" size="sm">
+                    <Link to={`/articles/${article.id}`}>
+                      Baca Selengkapnya
+                    </Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -231,8 +233,10 @@ const Articles = () => {
                       <Calendar className="h-3 w-3" />
                       {new Date(article.date).toLocaleDateString('id-ID')}
                     </div>
-                    <Button variant="outline" size="sm" className="w-full">
-                      Baca Artikel
+                    <Button asChild variant="outline" size="sm" className="w-full">
+                      <Link to={`/articles/${article.id}`}>
+                        Baca Artikel
+                      </Link>
                     </Button>
                   </div>
                 </CardContent>

@@ -12,6 +12,7 @@ import Causes from "./pages/Causes";
 import Solutions from "./pages/Solutions";
 import Counseling from "./pages/Counseling";
 import Articles from "./pages/Articles";
+import ArticleDetail from "./pages/ArticleDetail";
 import Contact from "./pages/Contact";
 import Quiz from "./pages/Quiz";
 import NotFound from "./pages/NotFound";
@@ -35,6 +36,7 @@ const App = () => (
               <Route path="/solutions" element={<Solutions />} />
               <Route path="/counseling" element={<Counseling />} />
               <Route path="/articles" element={<Articles />} />
+              <Route path="/articles/:id" element={<ArticleDetail />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/quiz" element={<Quiz />} />
               <Route path="*" element={<NotFound />} />
