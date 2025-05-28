@@ -115,20 +115,20 @@ const Index = () => {
         <CardHeader className="text-center">
           <CardTitle className="text-2xl md:text-3xl text-primary flex items-center justify-center gap-3">
             <Brain className="h-8 w-8" />
-            Uji Pengetahuan Anda
+            Tes Psikologi Gratis
           </CardTitle>
           <CardDescription className="text-lg">
-            Quiz interaktif tentang pergaulan bebas dan dampaknya
+            Analisis kesehatan mental dan ketahanan diri remaja
           </CardDescription>
         </CardHeader>
         <CardContent className="text-center">
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Ikuti quiz dengan 10 pertanyaan untuk menguji pemahaman Anda tentang pergaulan bebas 
-            di kalangan remaja dan cara pencegahannya.
+            Ikuti tes psikologi dengan 10 pertanyaan untuk mengetahui kondisi kesehatan mental Anda 
+            dan dapatkan rekomendasi yang sesuai dengan hasil analisis.
           </p>
           <Button asChild size="lg" className="text-lg px-8">
             <Link to="/quiz">
-              Mulai Quiz
+              Mulai Tes Psikologi
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>
